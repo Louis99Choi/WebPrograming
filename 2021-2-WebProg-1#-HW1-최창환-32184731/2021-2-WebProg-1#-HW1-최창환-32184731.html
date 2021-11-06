@@ -1,0 +1,51 @@
+<!--Open Challenge 01 Assignment-->
+<!--Profile of ChangHwan-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Profile of ChangHwan</title>
+<style>
+	body { text-align: center; background-color : linen; color : green;
+				margin-left : 40px; margin-right : 40px;}
+	h3 { text-align : center; color : darkred;}
+	hr { height : 5px; border : solid grey;
+				background-color : grey }
+	span { color: blue; font-size: 20px; }
+    span2 { color: blue; font-size: 40px; }
+</style>
+<script>
+	function show() { // <img>에 이미지 달기
+		document.getElementById("prf").src = "profile_Choi.jpg"
+	}
+	function hide() { // <img>에 이미지 제거
+		document.getElementById("prf").src= "";
+	}
+</script>
+</head>
+<body>
+<h3 onmouseover="show()" onmouseout="hide()">Chang Hwan</h3>
+<hr>
+<div><img id="prf" src=""></div>
+    <p>
+    안녕하세요! 
+    </p>
+    
+    <p>
+     저는 단국대학교 2학년, 컴퓨터공학과 18학번 <span>최창환</span> 입니다. 
+    빅데이터와 인공지능에 관심이 많으며 현재 단국대학교 <span>MLPA LAB 학부연구생</span>으로서 
+	딥러닝에 대해 공부하고 있고, 가장 좋아하는 취미는 킥복싱입니다.     
+    </p>
+    
+    이번 학기에 웹프로그래밍 수업을 수강하게 되었고,
+	OT와 1주차 수업을 통해 웹이라는 것에 대해 정확히 알게되었으며 
+	클라이언트와 서버 등 웹의 여러 구동 원리에 대해 찾아보니 매우 흥미롭습니다.
+    
+    <p>
+    <span2>감사합니다</span2>.
+    </p>
+	
+</body>
+</html>
+

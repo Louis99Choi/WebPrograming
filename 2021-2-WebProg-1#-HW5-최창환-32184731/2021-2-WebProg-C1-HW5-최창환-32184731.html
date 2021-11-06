@@ -1,0 +1,80 @@
+<!--Open Challenge 05 Assignment-->
+<!--Introduction of Deep Learning & survey with CSS-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2021-2-WebProg-C1-HW5-최창환-32184731.HTML</title>
+    <style>
+        @import url(2021-2-WebProg-C1-HW5-최창환-32184731.css)
+    </style>
+
+    </head>
+    <body>
+        <iframe src="https://upload.wikimedia.org/wikipedia/commons/0/07/Silence.ogg" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio id="audio" controls autoplay loop>
+        <source src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Arirang%2C_Lyrics_in_English_Adaptation-2_by_GSIT_at_HUFS_in_2013%2C_sung_by_HUFS_students.ogg">
+        </audio><h5>※ 오디오 음량이 클 수 있습니다! 스피커 음량을 줄여주세요!※</h5>
+
+        <header>
+            <h1>딥 러닝 in Artificial Intelligence</h1>
+            <p>심층 학습(深層學習) 또는 딥  러닝(영어: deep structured learning, deep learning 또는 hierarchical learning)은 여러 비선형 변환기법의 조합을 통해 높은 수준의 추상화(abstractions, 다량의 데이터나 복잡한 자료들 속에서 핵심적인 내용 또는 기능을 요약하는 작업)를 시도하는 기계 학습 알고리즘의 집합으로 정의되며, 큰 틀에서 사람의 사고방식을 컴퓨터에게 가르치는 기계학습의 한 분야라고 이야기할 수 있다.</p>
+        </header>
+            
+        <hr>
+        <nav>
+            <h2>목차</h2>
+            <ul>
+                <li><a href = "#history">딥 러닝의 역사</a>
+                <li><a href = "#why">왜 다시 딥 러닝인가?</a>
+                <li><a href = "#deepTech">응용 기술 분야</a>
+                <li><a href = "#DLbtwHuman">딥 러닝과 인간의 두뇌</a>
+                <li><a href = "#library">모델 구현을 위한 라이브러리</a>    
+            </ul>
+        </nav>
+
+        <section>
+            <article id = "history">
+                <h2><a href = "https://ko.wikipedia.org/wiki/%EB%94%A5_%EB%9F%AC%EB%8B%9D#%EB%94%A5_%EB%9F%AC%EB%8B%9D%EC%9D%98_%EC%97%AD%EC%82%AC" target = "_blank">딥 러닝의 역사</a></h2> 
+                <q> MIT가 2013년을 빛낼 10대 혁신기술 중 하나로 선정하고 가트너(Gartner, Inc.)가 2014 세계 IT 시장 10대 주요 예측[6]에 포함시키는 등 최근들어 딥 러닝에 대한 관심이 높아지고 있지만 사실 딥 러닝 구조는
+                 <a herf = "https://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B3%B5_%EC%8B%A0%EA%B2%BD%EB%A7%9D" target = "_blank">인공신경망</a>(ANN, artificial neural networks)에 기반하여 설계된 개념이다.</q>
+            </article>
+            <article id = "whyDeepLearning">
+                <h2><a href = "https://ko.wikipedia.org/wiki/%EB%94%A5_%EB%9F%AC%EB%8B%9D#%EC%99%9C_%EB%8B%A4%EC%8B%9C_%EB%94%A5_%EB%9F%AC%EB%8B%9D%EC%9D%B8%EA%B0%80?" target="_blank">왜 다시 딥 러닝인가?</a></h2>
+                <p>딥 러닝이 부활하게 된 이유는 크게 세 가지로 꼽힌다. 첫 번째는 기존 <a herf = "https://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B3%B5_%EC%8B%A0%EA%B2%BD%EB%A7%9D" target = "_blank">인공신경망</a> 모델의 단점이 극복되었다는 점이다. 그러나 과적합 문제만 해결되었다고 해서 느린 학습시간이 줄어드는 것은 아니다. 두 번째 이유로, 여기에는 하드웨어의 발전이라는 또다른 요인이 존재 한다. 특히 강력한 GPU는 딥 러닝에서 복잡한 행렬 연산에 소요되는 시간을 크게 단축시켰다. 마지막으로 언급하지만 가장 중요한 세 번째 이유로 빅 데이터를 들 수 있다. 대량으로 쏟아져 나오는 데이터들, 그리고 그것들을 수집하기 위한 노력 특히 SNS 사용자들에 의해 생산되는 다량의 자료와 태그정보들 모두가 종합되고 분석 되어 학습에 이용될 수 있다. - <a herf = "https://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B3%B5_%EC%8B%A0%EA%B2%BD%EB%A7%9D" target = "_blank">인공신경망</a>의 학습에 사용되는 트레이닝벡터는 이름이 붙어 있는(labeled) 데이터여야 하는데(supervised learning의 경우) 대량의 트레이닝셋 모두에 label을 달아주는 일은 불가능한 일이다. 이런 이유로 초기 학습에 사용되는 일부 데이터에 대해서만 지도학습(supervised learning)을 수행하고 나머지 트레이닝셋에 대해서는 비지도학습(unsupervised learning)을 진행하며, 학습된 결과는 기존 학습의 결과와 앞서 분석된 메타태그 정보들을 종합하여 인식기가 완성 된다.</p>
+            </article>
+            <article id = "deepTech">
+                <h2><a href = "https://ko.wikipedia.org/wiki/%EB%94%A5_%EB%9F%AC%EB%8B%9D#%EC%9D%91%EC%9A%A9" target="_blank">딥 러닝 응용 기술 분야</a></h2>
+            <h3>대표적인 응용 분야</h3>
+                <ul>
+                    <li><details><summary>자동 음성 인식</summary><q>음성 인식(Speech Recognition)이란 사람이 말하는 음성 언어를 컴퓨터가 해석해 그 내용을 문자 데이터로 전환하는 처리를 말한다. STT(Speech-to-Text)라고도 한다. 키보드 대신 문자를 입력하는 방식으로 주목을 받고 있다. 로봇, 텔레매틱스 등 음성으로 기기제어, 정보검색이 필요한 경우에 응용된다. 대표적인 알고리즘은 HMM(Hidden Markov Model)으로서, 다양한 화자들이 발성한 음성들을 통계적으로 모델링하여 음향모델을 구성하며 말뭉치 수집을 통하여 언어모델을 구성한다.</q></details>
+                    <li><details><summary>영상 인식</summary><p>제프리 힌튼과 그의 제자들은 2012년 가을에 대규모 ImageNet 대회에서 당시 최신 기계 학습 방법들의 성능을 훌쩍 뛰어넘는 결과를 보여주며 우승하였다. 이로 인해 컴퓨터 비전의 주요 분야인 영상 인식 및 사물 인식 분야에서의 딥 러닝의 중요성이 대두되었다. 그 당시, 대규모 음성인식에 딥 러닝이 상당히 잘 작동한다는 것을 알고 있었던 그들은, 20년 전에 고안된 심층 합성곱 신경망 구조를 대규모 작업에 맞도록 대규모로 사용하였다. 2013년부터 2014년에 이르기까지, 딥 러닝을 이용한 ImageNet 과제 결과의 오차율은 대규모 음성인식 분야와 추세를 같이하며 빠르게 줄어나갔다.<br> 자동 음성인식 분야의 자동 음성 번역 및 이해 분야로의 확장과 마찬가지로, 이미지 분류 분야는 자동 영상 캡션닝(captioning)이라는 더욱 도전적인 분야로 확장되었다. 자동 영상 캡셔닝은 딥 러닝을 핵심 기반 기술로 사용하는 분야이다.<br> 적용 사례로는 360°카메라 화면을 이해할 수 있도록 딥 러닝을 통해 학습된 자동차 탑재용 컴퓨터 등이 있다.</p></details>
+                    <li><details><summary>자연어 처리</summary><q>2000년대 초부터 인공신경망은 언어 모형을 구현하기 위해 사용되어 왔다. 이 분야에서의 핵심 기법은 negative sampling과 단어 표현(word embedding)이다. word2vec과 같은 단어 표현은 데이터집합으로 주어진 단어들 사이의 관계를 학습하는 인공신경망을 이용하여 단어를 벡터 공간 상에 나타내는 것이라고 할 수 있다. 단어표현을 재귀 신경망(recursive neural network)의 입력 계층으로 이용하면 해당 신경망이 compositional vector grammar를 통해 문장과 구(phrase)를 분석하도록 학습시킬 수 있다. 이 compositional vector grammar는 재귀 신경망으로 구현된 probabilistic context free grammar (PCFG) 라고 할 수 있다. 단어표현을 기반으로 구성된 Recursive autoencoder는 문장 간의 유사도 판단과 의역 탐지를 하도록 훈련이 가능하다. 이러한 심층 인공신경망 구조들은 자동 번역(machine translation), 감정 분석(sentiment analysis), 정보 검색(information retrieval)을 비롯한 다양한 자연언어처리 관련 연구에서 최첨단 기술로서 쓰이고 있다.</q></details>
+                </ul>
+            </article>
+            <article id = "DLbtwHuman">
+                <h2><a herf = "https://ko.wikipedia.org/wiki/%EB%94%A5_%EB%9F%AC%EB%8B%9D#%EB%94%A5_%EB%9F%AC%EB%8B%9D%EA%B3%BC_%EC%9D%B8%EA%B0%84_%EB%91%90%EB%87%8C" target="_blank">딥 러닝과 인간의 두뇌</a></h2>
+                <r> 딥 러닝은 인지신경과학자(Cognitive neuroscientist)들이 1990년대 초에 제안한 뇌 발달(Brain development)과 밀접한 관련이 있다. 이러한 발달 관점의 이론들이 도입되면서, 순수한 전산 기반의 딥 러닝 모델들을 위한 기술적인 기반도 마련되었다. 발달 이론에서는 신경발달요인(Nerve growth factor)의 물결과 같은 뇌에서의 다양한 학습 역학이 결국은 서로 연관된 신경망들의 자기조직화를 도와준다는 특징이 있다. 이는 나중에 전산 기반의 딥 러닝 모델에서도 활용되어서, 인공신경망의 계층적인 필터 구조(각 동작 환경에서 필요한 정보만 걸러내는 다중 계층 구조)가 실제 뇌의 피질과 유사해보이게 되었다. 이러한 과정을 통해 자기조직적인 변환기의 계층구조가 만들어지고 각 환경에 맞도록 조율된다. 1995년에 뉴욕 타임스에서는 다음과 같이 말하였다. "...유아의 두뇌는 영양적인 요인의 영향으로 스스로 조직화되는 것 같다... 뇌에서 한 층의 조직이 먼저 성숙되고 다른 부분과 순차적으로 연결되는 방식으로 전체 뇌가 성숙될 때까지 반복된다." 인간의 인식 발달 및 진화와 관련하여 딥 러닝의 중요성은 많은 과학자들의 관심을 끌고 있다. 가까운 영장류 동물들과 인간이 차별화되는 부분 중 하나는 바로 발달 시기이다. 다른 영장류 동물들의 뇌가 출산 전에 거의 완성되는 반면에, 인간의 뇌는 비교적 출산 후에도 계속 발달하는 편이다. 그래서 인간의 경우 뇌가 발달되는 중요한 시기 동안 세상 밖의 훨씬 더 복잡한 경험에 노출될 수 있다. 이러한 현상은 인간이 다른 동물들에 비하여 빠르게 변화하는 환경에 더 잘 적응할 수 있도록 만든다. 이러한 변화의 정도는 대뇌 피질 발달에 반영되기도 하고, 또한 두뇌의 자기조직화 시기에 자극적인 환경으로부터의 정보 추출에 변화를 준다. 물론, 이러한 유연성은 인간이 다른 동물들에 비해 긴 미성숙기(보호자에게 도움을 받고 훈련을 받아야 하는 의존적인 시기)를 가지게 된 원인이기도 하다. 딥 러닝의 이런 이론들은 결국 인간 진화의 기본적인 조건으로서 문화와 인식의 공진화를 보여준다.</r>
+            </article>
+            <article id = "library">
+                <h2> 모델 구현 코딩을 위한 Python 라이브러리 </h2>
+                <table>
+                <caption>________________PyTorch________________.________________TensorFlow________________.________________NumPy________________</caption>
+                <tr>
+                    <td><img src = "https://upload.wikimedia.org/wikipedia/commons/0/04/PyTorch_logo_white.svg" title="PyTorch(파이토치)" width = "300", height = "300"></td>
+                    <td><img src = "https://upload.wikimedia.org/wikipedia/commons/1/11/TensorFlowLogo.svg" title="TensorFlow(텐서플로우)" width = "300", height = "300"></td>
+                    <td><img src = "https://upload.wikimedia.org/wikipedia/commons/1/1a/NumPy_logo.svg" title="NumPy(넘파이)" width = "300", height = "300"></td>
+                </tr>
+                </table>
+            </article>
+            <br><br><br><br>
+        </section>
+        <footer>
+            <small><a href = "2021-2-WebProg-C1-HW5-최창환-32184731-survey.html" target = "_blank">인공지능 인식도 설문조사</a></small>
+            <hr>
+            <p><small><strong>Copyright 2021 by ChangHwan</small></p>
+        </footer>
+                
+    </body>
+
+</html>
